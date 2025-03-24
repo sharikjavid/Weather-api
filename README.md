@@ -124,15 +124,19 @@ Get current weather information and a natural language report.
 
 #### Option 2: Pull from Docker Hub
 
-Pull the pre-built image from Docker Hub:
+1. Pull the pre-built image from Docker Hub:
 ```bash
 docker pull 2424048sha/weather-api
 ```
 
-Run the container:
+2. Run the container:
 ```bash
 docker run -p 8000:8000 -d 2424048sha/weather-api
 ```
+3. Once the container is up and running, you can access the /weather endpoint by visiting:
+    ```bash
+    http://127.0.0.1:8000/weather?latitude=4.728&longitude=-10
+   ```
 
 ## Testing
 
