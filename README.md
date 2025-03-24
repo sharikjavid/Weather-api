@@ -77,6 +77,33 @@ uvicorn app.main:app --reload
 
 The API will be available at http://127.0.0.1:8000
 
+
+### Endpoints
+
+### `/weather`
+This is the primary endpoint for retrieving weather and a Gemini-generated report.
+
+GET http://127.0.0.1:8000/weather?latitude=40&longitude=-74.0060
+
+**Example request**:
+
+Get current weather information and a natural language report.
+
+**Parameters:**
+- `latitude` (float, required): Latitude between -90 and 90
+- `longitude` (float, required): Longitude between -180 and 180
+
+**Response Example:**
+```json
+{
+  "temperature": 15.2,
+  "unit": "°C",
+  "report": "The current temperature is 15.2°C, which feels cool and comfortable. Expect partly cloudy skies throughout the day. A light jacket or sweater is recommended for outdoor activities."
+}
+```
+
+
+
 ### Docker Deployment
 
 #### Option 1: Build and Run Locally
@@ -137,27 +164,4 @@ Once the application is running, you can access the automatic API documentation 
 - Swagger UI: http://127.0.0.1:8000/docs
 - ReDoc: http://127.0.0.1:8000/redoc
 
-### Endpoints
 
-#### GET /weather
-
-Get current weather information and a natural language report.
-
-**Parameters:**
-- `latitude` (float, required): Latitude between -90 and 90
-- `longitude` (float, required): Longitude between -180 and 180
-
-**Response Example:**
-```json
-{
-  "temperature": 15.2,
-  "unit": "°C",
-  "report": "The current temperature is 15.2°C, which feels cool and comfortable. Expect partly cloudy skies throughout the day. A light jacket or sweater is recommended for outdoor activities."
-}
-```
-
-
-
-## License
-
-[MIT License](LICENSE)
