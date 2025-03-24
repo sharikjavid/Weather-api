@@ -13,7 +13,7 @@ A FastAPI-based service that provides current weather information along with a h
 ## Tech Stack
 
 - **FastAPI** - Modern, high-performance web framework
-- **Google Gemini API** - Advanced LLM for generating human-friendly weather reports
+- **Google Gemini API** - LLM for generating human-friendly weather reports
 - **Open-Meteo API** - Reliable weather data source
 - **Pytest** - Comprehensive test suite
 - **Docker** - Containerization for consistent deployment
