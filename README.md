@@ -2,6 +2,7 @@
 
 A FastAPI-based service that provides current weather information along with a human-readable report generated using Google's Gemini LLM.
 
+
 ## Features
 
 - 🌡️ Get current temperature data based on latitude and longitude coordinates
@@ -17,6 +18,24 @@ A FastAPI-based service that provides current weather information along with a h
 - **Open-Meteo API** - Reliable weather data source
 - **Pytest** - Comprehensive test suite
 - **Docker** - Containerization for consistent deployment
+
+  ## Project Structure
+
+```
+sharikjavid-weather-api/
+├── app/
+│   ├── api/            # API routes
+│   ├── core/           # Core functionality (config, logging)
+│   ├── models/         # Pydantic models
+│   ├── services/       # External services integration
+│   │   ├── llm/        # LLM service integrations
+│   │   └── weather/    # Weather service integrations
+│   └── main.py         # Application entry point
+├── tests/              # Test suite
+├── Dockerfile          # Docker configuration
+├── requirements.txt    # Python dependencies
+└── README.md           # Project documentation
+```
 
 ## Getting Started
 
@@ -137,23 +156,7 @@ Get current weather information and a natural language report.
 }
 ```
 
-## Project Structure
 
-```
-sharikjavid-weather-api/
-├── app/
-│   ├── api/            # API routes
-│   ├── core/           # Core functionality (config, logging)
-│   ├── models/         # Pydantic models
-│   ├── services/       # External services integration
-│   │   ├── llm/        # LLM service integrations
-│   │   └── weather/    # Weather service integrations
-│   └── main.py         # Application entry point
-├── tests/              # Test suite
-├── Dockerfile          # Docker configuration
-├── requirements.txt    # Python dependencies
-└── README.md           # Project documentation
-```
 
 ## License
 
