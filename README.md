@@ -7,7 +7,6 @@ A FastAPI-based service that provides current weather information along with a h
 
 - 🌡️ Get current temperature data based on latitude and longitude coordinates
 - 💬 Generate natural language weather reports powered by Gemini LLM
-- 🔒 Comprehensive error handling and input validation
 - 📊 Logging with configurable levels
 - 🐳 Docker support for easy deployment
 
@@ -126,7 +125,7 @@ Get current weather information and a natural language report.
 
 1. Pull the pre-built image from Docker Hub:
 ```bash
-docker pull 2424048sha/weather-api
+docker pull 2424048sha/weather-api:latest
 ```
 
 2. Run the container:
