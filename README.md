@@ -48,8 +48,8 @@ sharikjavid-weather-api/
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/sharikjavid-weather-api.git
-   cd sharikjavid-weather-api
+   git clone https://github.com/sharikjavid/weather-api.git
+   cd weather-api
    ```
 
 2. Create a virtual environment and activate it:
